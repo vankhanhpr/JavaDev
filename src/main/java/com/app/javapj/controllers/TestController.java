@@ -1,14 +1,14 @@
-package com.app.javapj.controller;
+package com.app.javapj.controllers;
 
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping(value="/test")
 public class TestController {
-    @GetMapping("/")
-    @ResponseBody
+    @GetMapping("/TestController")
     public String listAllContact(){
-       return  "Khanhnv";
+       return  "Khanhnv12312";
     }
 }
